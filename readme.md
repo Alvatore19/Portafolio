@@ -68,4 +68,3 @@ Web system for managing medical appointments, doctors, and patients.
 -   Laravel
 -   MySQL
 -   Tailwind CSS
-S
