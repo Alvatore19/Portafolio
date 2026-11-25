@@ -1,312 +1,334 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="../Media/suitcase-solid-full.svg"
-        />
-        <title>Alejandro | About-me</title>
-    </head>
-    <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
-        <header
-            class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20"
-        >
-            <div
-                class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center"
-            >
-                <div
-                    class="flex items-center gap-2 text-white font-bold text-xl"
-                >
-                    <span class="text-[#C778DD]">#</span>
-                    <h3>Alejandro</h3>
-                </div>
+    <link rel="icon" type="image/svg+xml" href="../Media/suitcase-solid-full.svg" />
 
-                <nav class="hidden md:flex">
-                    <ul class="flex space-x-8">
-                        <li
-                            ><a
-                                href="../index.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span>home</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/projects.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >projects</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/aboutMe.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >about-me</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/contactMe.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >contacts</a
-                            ></li
-                        >
-                    </ul>
-                </nav>
+    <title>Alejandro Alvarenga | Sobre mí</title>
+  </head>
+  <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
+    <header class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center gap-2 text-white font-bold text-xl">
+          <span class="text-[#C778DD]">#</span>
+          <span>Alejandro</span>
+        </a>
 
-                <button
-                    id="menu-btn"
-                    class="text-white focus:outline-none md:hidden z-60"
-                >
-                    <svg
-                        id="menu-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M12 12h8M4 18h16"
-                        />
-                    </svg>
-                </button>
+        <nav class="hidden md:flex">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="../index.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Inicio
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Proyectos
+              </a>
+            </li>
+            <li>
+              <a href="aboutMe.html" class="text-white transition-colors text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Sobre mí
+              </a>
+            </li>
+            <li>
+              <a href="contactMe.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Contáctame
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="menu-btn" class="text-white focus:outline-none md:hidden z-60" aria-label="Abrir menú">
+          <svg
+            id="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M12 12h8M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden z-50">
+        <div class="mt-16 flex flex-col gap-8 text-3xl">
+          <a href="../index.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Inicio
+          </a>
+          <a href="projects.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Proyectos
+          </a>
+          <a href="aboutMe.html" class="text-white">
+            <span class="text-[#C778DD]">#</span>Sobre mí
+          </a>
+          <a href="contactMe.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Contáctame
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4">
+      <!-- Encabezado de página -->
+      <section class="pt-16 pb-4">
+        <h1 class="text-4xl font-semibold text-white mb-2">
+          <span class="text-[#C778DD]">/</span>sobre-mí
+        </h1>
+        <p class="text-[#ABB2BF] text-lg">¿Quién soy y en qué trabajo?</p>
+      </section>
+
+      <!-- Presentación -->
+      <section class="flex flex-col md:flex-row items-center justify-between py-12 gap-12">
+        <div class="md:w-3/5 text-left">
+          <h2 class="text-3xl font-semibold text-white mb-6">
+            Hola, soy
+            <span class="text-[#C778DD]">Alejandro Alvarenga</span>
+          </h2>
+          <p class="text-[#ABB2BF] text-lg mb-6 leading-relaxed">
+            Soy estudiante de Ingeniería en Ciencias de la Computación en la Universidad Don Bosco, con formación
+            técnica en Desarrollo de Software por el Colegio Don Bosco.
+          </p>
+          <p class="text-[#ABB2BF] text-lg mb-6 leading-relaxed">
+            Cuento con experiencia práctica en desarrollo full-stack web y de escritorio (.NET, C#, Laravel, JavaScript
+            y Tailwind CSS), arquitectura de bases de datos relacionales y multidimensionales (SQL Server, MySQL,
+            Pentaho y Power BI), así como soporte técnico y administración de infraestructura TI.
+          </p>
+          <p class="text-[#ABB2BF] text-lg leading-relaxed">
+            Me enfoco en construir soluciones funcionales, escalables y centradas en el usuario, manteniendo una
+            formación continua en tecnologías modernas como Full Stack Open (University of Helsinki).
+          </p>
+        </div>
+
+        <div class="relative shrink-0">
+          <div class="absolute -top-4 -left-4 w-20 h-20 border-2 border-[#C778DD] z-0"></div>
+          <img
+            src="../Media/user/profile.jpg"
+            alt="Alejandro Alvarenga"
+            class="w-64 h-64 object-cover border-b-2 border-[#C778DD] relative z-10" />
+        </div>
+      </section>
+
+      <!-- Experiencia y Formación -->
+      <section class="py-12">
+        <div class="flex items-center gap-4 mb-10">
+          <h2 class="text-2xl md:text-3xl font-medium text-white">
+            <span class="text-[#C778DD]">#</span>Experiencia y formación
+          </h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Experiencia -->
+          <div class="border border-[#ABB2BF] bg-[#282C33]">
+            <div class="p-3 border-b border-[#ABB2BF]">
+              <h3 class="text-xl font-medium text-white">Experiencia práctica</h3>
             </div>
+            <div class="p-5 flex flex-col gap-6">
+              <div>
+                <p class="text-xs text-[#C778DD] mb-1">Jun. 2026 – Nov. 2026</p>
+                <h4 class="text-white font-semibold text-base">
+                  Soporte Técnico y Administración TI (Servicio Social – 250 hrs)
+                </h4>
+                <p class="text-xs text-[#ABB2BF]/80 mb-2">Unidad Médica ISSS Soyapango</p>
+                <p class="text-sm text-[#ABB2BF] leading-relaxed">
+                  Administración de políticas endpoint en Kaspersky Endpoint Security, diagnóstico de hardware,
+                  despliegue de sistemas operativos, mantenimiento preventivo/correctivo y soporte de red local.
+                </p>
+              </div>
 
-            <div
-                id="mobile-menu"
-                class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden"
-            >
-                <div class="mt-16 flex flex-col gap-8 text-3xl">
-                    <a href="../index.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>home</a
-                    >
-                    <a href="../Html/projects.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>projects</a
-                    >
-                    <a href="../Html/aboutMe.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>about-me</a
-                    >
-                    <a href="../Html/contactMe.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>contacts</a
-                    >
-
-                    <div
-                        class="mt-4 text-xl text-gray-400 border-t border-gray-700 pt-4"
-                    >
-                        <span>EN ⌄</span>
-                    </div>
-                </div>
+              <div class="border-t border-[#ABB2BF]/30 pt-5">
+                <p class="text-xs text-[#C778DD] mb-1">2024 – Presente</p>
+                <h4 class="text-white font-semibold text-base">Desarrollador Web Full-Stack (Independiente)</h4>
+                <p class="text-xs text-[#ABB2BF]/80 mb-2">Proyectos Freelance y Portafolio</p>
+                <p class="text-sm text-[#ABB2BF] leading-relaxed">
+                  Diseño, desarrollo y despliegue continuo de sitios y aplicaciones responsivas con HTML5, Tailwind CSS,
+                  JavaScript/TypeScript, PHP (Laravel), ASP.NET Core MVC y SQL Server.
+                </p>
+              </div>
             </div>
-        </header>
-        <main class="max-w-6xl mx-auto px-4">
-            <!-- Presentation -->
-            <section
-                class="flex flex-col md:flex-row items-center justify-between py-20 gap-12"
-            >
-                <div class="md:w-3/5 text-left">
-                    <h1 class="text-3xl font-semibold text-white mb-6">
-                        Hi there, I'm
-                        <span class="text-[#C778DD]"
-                            >Alejandro Alvarenga 👋</span
-                        >
-                    </h1>
-                    <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-                        I'm a beginner developer passionate about learning new
-                        technologies and solving problems through code. I enjoy
-                        working on projects that challenge me, improve my
-                        skills, and let me explore different areas of web
-                        development. Currently, I am gaining experience in
-                        frameworks like Laravel and frontend tools like Tailwind
-                        CSS.
-                    </p>
-                    <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-                        In my free time, I like to read tech blogs, watch
-                        tutorials, and experiment with new programming
-                        languages. I'm excited to continue growing as a
-                        developer and contribute to meaningful projects in the
-                        future.
-                    </p>
-                </div>
+          </div>
 
-                <div class="relative">
-                    <div
-                        class="absolute -top-4 -left-4 w-20 h-20 border-2 border-[#C778DD] z-0"
-                    ></div>
-                    <img
-                        src="../Media/user/profile.jpg"
-                        alt="Profile Picture"
-                        class="w-64 h-64 object-cover border-b-2 border-[#C778DD] relative z-10"
-                    />
-                </div>
-            </section>
-
-            <!-- Skills -->
-            <section class="py-16">
-                <div class="flex items-center gap-4 mb-12">
-                    <h2 class="text-3xl font-medium text-white">
-                        <span class="text-[#C778DD]">#</span>skills
-                    </h2>
-                    <div class="h-px bg-[#C778DD] grow max-w-md"></div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-6 items-start">
-                    <div class="border border-[#ABB2BF] bg-[#282C33]">
-                        <div class="p-2 border-b border-[#ABB2BF]">
-                            <h3 class="text-xl font-medium text-white"
-                                >Frontend</h3
-                            >
-                        </div>
-                        <div class="grid grid-cols-1">
-                            <div
-                                class="p-4 border-b border-[#ABB2BF] last:border-b-0"
-                            >
-                                <h4
-                                    class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase"
-                                    >Languages</h4
-                                >
-                                <p class="text-[#ABB2BF] text-sm"
-                                    >JavaScript HTML CSS SCSS</p
-                                >
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-[#ABB2BF] bg-[#282C33]">
-                        <div class="p-2 border-b border-[#ABB2BF]">
-                            <h3 class="text-xl font-medium text-white"
-                                >Backend</h3
-                            >
-                        </div>
-                        <div class="grid grid-cols-1">
-                            <div class="p-4 border-b border-[#ABB2BF]">
-                                <h4
-                                    class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase"
-                                    >Languages</h4
-                                >
-                                <p class="text-[#ABB2BF] text-sm"
-                                    >PHP JavaScript C#</p
-                                >
-                            </div>
-                            <div class="p-4 border-b border-[#ABB2BF]">
-                                <h4
-                                    class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase"
-                                    >Frameworks</h4
-                                >
-                                <p class="text-[#ABB2BF] text-sm"
-                                    >Laravel Vue
-                                </p>
-                            </div>
-                            <div class="p-4">
-                                <h4
-                                    class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase"
-                                    >Databases</h4
-                                >
-                                <p class="text-[#ABB2BF] text-sm"
-                                    >SQLite MySQL SQLServer</p
-                                >
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-[#ABB2BF] bg-[#282C33]">
-                        <div class="p-2 border-b border-[#ABB2BF]">
-                            <h3 class="text-xl font-medium text-white"
-                                >Others</h3
-                            >
-                        </div>
-                        <div class="grid grid-cols-1">
-                            <div class="p-4 border-b border-[#ABB2BF]">
-                                <h4
-                                    class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase"
-                                    >Technologies</h4
-                                >
-                                <p class="text-[#ABB2BF] text-sm"
-                                    >Git Figma Font-Awesome</p
-                                >
-                            </div>
-                            <div class="p-4">
-                                <h4
-                                    class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase"
-                                    >Tools</h4
-                                >
-                                <p class="text-[#ABB2BF] text-sm">VSCode VStudio RapidMiner Pentaho PowerBI VirtualBox Exel Word</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
-            <div class="max-w-6xl mx-auto px-4 text-center">
-                <div class="flex justify-center">
-                    <p class="text-[#ABB2BF] text-x">
-                        &copy; 2026 Alejandro. All rights reserved.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-2">
-                    <div
-                        class="mt-6 flex flex-col gap-2 text-[12px] text-[#ABB2BF]/70"
-                    >
-                        <p>
-                            Diseño inspirado por:
-                            <a
-                                href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
-                                target="_blank"
-                                class="hover:text-white underline decoration-dotted"
-                            >
-                                Portfolio Design (Figma)
-                            </a>
-                        </p>
-                        <p>
-                            Iconos:
-                            <a
-                                href="https://www.flaticon.es/iconos-gratis/creencia"
-                                title="creencia iconos"
-                                class="hover:text-white underline"
-                            >
-                                Retinaicons - Flaticon
-                            </a>
-                        </p>
-                    </div>
-                    <div>
-                        <h2 class="text-xl">Media</h2>
-                        <div
-                            class="flex justify-center items-center gap-4 mt-4"
-                        >
-                            <a href="https://github.com/Marvel983"
-                                ><img
-                                    src="../Media/github.png"
-                                    alt="GitHub"
-                                    class="w-8 h-8 relative z-10"
-                            /></a>
-                            <a
-                                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
-                                ><img
-                                    src="../Media/linkedin.png"
-                                    alt="linkedin"
-                                    class="w-8 h-8 relative z-10"
-                            /></a>
-                        </div>
-                    </div>
-                </div>
+          <!-- Educación y otros estudios -->
+          <div class="border border-[#ABB2BF] bg-[#282C33]">
+            <div class="p-3 border-b border-[#ABB2BF]">
+              <h3 class="text-xl font-medium text-white">Educación y formación continua</h3>
             </div>
-        </footer>
+            <div class="p-5 flex flex-col gap-6">
+              <div>
+                <p class="text-xs text-[#C778DD] mb-1">2025 – Actualidad</p>
+                <h4 class="text-white font-semibold text-base">Ingeniería en Ciencias de la Computación</h4>
+                <p class="text-sm text-[#ABB2BF]">Universidad Don Bosco, Soyapango</p>
+              </div>
 
-        <!-- Script -->
-        <script src="../Js/app.js"></script>
-    </body>
+              <div class="border-t border-[#ABB2BF]/30 pt-5">
+                <p class="text-xs text-[#C778DD] mb-1">2022 – 2024</p>
+                <h4 class="text-white font-semibold text-base">Bachillerato Técnico en Desarrollo de Software</h4>
+                <p class="text-sm text-[#ABB2BF]">Colegio Don Bosco, Soyapango</p>
+              </div>
+
+              <div class="border-t border-[#ABB2BF]/30 pt-5">
+                <p class="text-xs text-[#C778DD] mb-1">Otros estudios</p>
+                <ul class="text-sm text-[#ABB2BF] space-y-1">
+                  <li>&bull; Full Stack Open – University of Helsinki (En curso)</li>
+                  <li>&bull; Programa de Educación Financiera – Capacítate para el Empleo (2024)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades -->
+      <section class="py-12">
+        <div class="flex items-center gap-4 mb-10">
+          <h2 class="text-2xl md:text-3xl font-medium text-white">
+            <span class="text-[#C778DD]">#</span>Habilidades
+          </h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <div class="border border-[#ABB2BF] bg-[#282C33]">
+            <div class="p-2 border-b border-[#ABB2BF]">
+              <h3 class="text-xl font-medium text-white">Frontend</h3>
+            </div>
+            <div class="grid grid-cols-1">
+              <div class="p-4 border-b border-[#ABB2BF]">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Lenguajes</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">HTML5, CSS3, JavaScript, TypeScript</p>
+              </div>
+              <div class="p-4">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Estilos y Diseño</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">Tailwind CSS, Diseño Responsivo, Figma</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-[#ABB2BF] bg-[#282C33]">
+            <div class="p-2 border-b border-[#ABB2BF]">
+              <h3 class="text-xl font-medium text-white">Backend y Software</h3>
+            </div>
+            <div class="grid grid-cols-1">
+              <div class="p-4 border-b border-[#ABB2BF]">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Lenguajes</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">C#, PHP, Python, SQL</p>
+              </div>
+              <div class="p-4">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Frameworks y Plataformas</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">
+                  ASP.NET Core MVC, Entity Framework Core, Windows Forms, Laravel
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-[#ABB2BF] bg-[#282C33]">
+            <div class="p-2 border-b border-[#ABB2BF]">
+              <h3 class="text-xl font-medium text-white">Datos e Infraestructura</h3>
+            </div>
+            <div class="grid grid-cols-1">
+              <div class="p-4 border-b border-[#ABB2BF]">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Bases de Datos y BI</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">
+                  SQL Server (T-SQL, SSIS, SSAS), MySQL, PostgreSQL, Pentaho Data Integration, Power BI
+                </p>
+              </div>
+              <div class="p-4">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Herramientas y Redes</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">
+                  Git, GitHub, Visual Studio, Rider, VS Code, Linux, VirtualBox, Cisco Packet Tracer, Wireshark
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fortalezas clave -->
+      <section class="py-12">
+        <div class="flex items-center gap-4 mb-10">
+          <h2 class="text-2xl md:text-3xl font-medium text-white">
+            <span class="text-[#C778DD]">#</span>Forma de trabajo
+          </h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="border border-[#ABB2BF] p-4 bg-[#282C33]">
+            <h3 class="text-white font-medium mb-2">Análisis crítico</h3>
+            <p class="text-sm text-[#ABB2BF]">Diagnóstico estructurado de fallos en software, datos y redes.</p>
+          </div>
+          <div class="border border-[#ABB2BF] p-4 bg-[#282C33]">
+            <h3 class="text-white font-medium mb-2">Aprendizaje ágil</h3>
+            <p class="text-sm text-[#ABB2BF]">Rápida adaptación a nuevos frameworks, lenguajes y arquitecturas.</p>
+          </div>
+          <div class="border border-[#ABB2BF] p-4 bg-[#282C33]">
+            <h3 class="text-white font-medium mb-2">Compromiso</h3>
+            <p class="text-sm text-[#ABB2BF]">Cumplimiento disciplinado de entregas, calidad y metas técnicas.</p>
+          </div>
+          <div class="border border-[#ABB2BF] p-4 bg-[#282C33]">
+            <h3 class="text-white font-medium mb-2">Trabajo colaborativo</h3>
+            <p class="text-sm text-[#ABB2BF]">Experiencia en equipos multidisciplinarios y documentación técnica.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="flex flex-col gap-2 text-xs text-[#ABB2BF]/70 md:text-left">
+            <p class="text-[#ABB2BF] text-sm">&copy; 2026 Alejandro Alvarenga. Todos los derechos reservados.</p>
+            <p>
+              Diseño inspirado por:
+              <a
+                href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white underline decoration-dotted">
+                Portfolio Design (Figma)
+              </a>
+            </p>
+            <p>
+              Iconos:
+              <a
+                href="https://www.flaticon.es/iconos-gratis/creencia"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Iconos Flaticon"
+                class="hover:text-white underline">
+                Retinaicons - Flaticon
+              </a>
+            </p>
+          </div>
+
+          <div class="md:text-right">
+            <h2 class="text-xl text-white font-medium">Redes</h2>
+            <div class="flex justify-center md:justify-end items-center gap-4 mt-4">
+              <a href="https://github.com/Marvel983" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="../Media/github.png" alt="GitHub" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="../Media/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="../Js/app.js"></script>
+  </body>
 </html>

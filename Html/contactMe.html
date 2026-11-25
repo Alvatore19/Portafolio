@@ -1,255 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/Media/suitcase-solid-full.svg"
-        />
-        <title>Alejandro | Contact</title>
-    </head>
-    <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
-        <header
-            class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20"
-        >
-            <div
-                class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center"
-            >
-                <div
-                    class="flex items-center gap-2 text-white font-bold text-xl"
-                >
-                    <span class="text-[#C778DD]">#</span>
-                    <h3>Alejandro</h3>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="icon" type="image/svg+xml" href="../Media/suitcase-solid-full.svg" />
+
+    <title>Alejandro Alvarenga | Contáctame</title>
+  </head>
+  <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
+    <header class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center gap-2 text-white font-bold text-xl">
+          <span class="text-[#C778DD]">#</span>
+          <span>Alejandro</span>
+        </a>
+
+        <nav class="hidden md:flex">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="../index.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Inicio
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Proyectos
+              </a>
+            </li>
+            <li>
+              <a href="aboutMe.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Sobre mí
+              </a>
+            </li>
+            <li>
+              <a href="contactMe.html" class="text-white transition-colors text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Contáctame
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="menu-btn" class="text-white focus:outline-none md:hidden z-60" aria-label="Abrir menú">
+          <svg
+            id="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M12 12h8M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden z-50">
+        <div class="mt-16 flex flex-col gap-8 text-3xl">
+          <a href="../index.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Inicio
+          </a>
+          <a href="projects.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Proyectos
+          </a>
+          <a href="aboutMe.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Sobre mí
+          </a>
+          <a href="contactMe.html" class="text-white">
+            <span class="text-[#C778DD]">#</span>Contáctame
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4">
+      <!-- Encabezado de página -->
+      <section class="pt-16 pb-8">
+        <h1 class="text-4xl font-semibold text-white mb-4">
+          <span class="text-[#C778DD]">/</span>contáctame
+        </h1>
+        <p class="text-[#ABB2BF] text-lg max-w-2xl">
+          Estoy disponible para oportunidades como desarrollador Jr., proyectos freelance y colaboraciones técnicas.
+        </p>
+      </section>
+
+      <!-- Contacto directo + Formulario -->
+      <section class="py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <!-- Información directa -->
+          <div class="flex flex-col gap-6">
+            <p class="text-[#ABB2BF] text-base leading-relaxed">
+              Si buscas apoyo en desarrollo web, sistemas en .NET, gestión de bases de datos o tienes alguna vacante o
+              consulta técnica, puedes escribirme directamente por correo, LinkedIn o a través del formulario.
+            </p>
+
+            <!-- Tarjeta de contacto directo -->
+            <div class="border border-[#ABB2BF] bg-[#282C33]">
+              <div class="p-3 border-b border-[#ABB2BF]">
+                <h2 class="text-white font-medium text-base">Contacto directo</h2>
+              </div>
+
+              <div class="p-5 flex flex-col gap-4">
+                <a
+                  href="mailto:alejandro.alvarenga.dev@gmail.com"
+                  class="flex items-center gap-3 group text-[#ABB2BF] hover:text-white transition-colors">
+                  <svg
+                    class="w-5 h-5 shrink-0 fill-[#ABB2BF] group-hover:fill-white transition-colors"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512">
+                    <path
+                      d="M61.4 64C27.5 64 0 91.5 0 125.4 0 126.3 0 127.1 .1 128L0 128 0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256-.1 0c0-.9 .1-1.7 .1-2.6 0-33.9-27.5-61.4-61.4-61.4L61.4 64zM464 192.3L464 384c0 8.8-7.2 16-16 16L64 400c-8.8 0-16-7.2-16-16l0-191.7 154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3zM48 125.4C48 118 54 112 61.4 112l389.2 0c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7z" />
+                  </svg>
+                  <span class="text-sm break-all">alejandro.alvarenga.dev@gmail.com</span>
+                </a>
+
+                <div class="flex items-center gap-3 text-[#ABB2BF]">
+                  <svg
+                    class="w-5 h-5 shrink-0 stroke-[#ABB2BF]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.8">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                  <span class="text-sm">Soyapango, San Salvador, El Salvador</span>
                 </div>
+              </div>
+            </div>
 
-                <nav class="hidden md:flex">
-                    <ul class="flex space-x-8">
-                        <li
-                            ><a
-                                href="../index.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span>home</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/projects.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >projects</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/aboutMe.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >about-me</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/contactMe.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >contacts</a
-                            ></li
-                        >
-                    </ul>
-                </nav>
+            <!-- Disponibilidad -->
+            <div class="border border-[#ABB2BF] bg-[#282C33] p-5">
+              <div class="flex items-center gap-3">
+                <span class="w-3 h-3 bg-[#C778DD] inline-block shrink-0"></span>
+                <p class="text-sm text-[#ABB2BF]">
+                  Disponible para roles <span class="text-white font-medium">Desarrollador Jr.</span> y proyectos
+                  <span class="text-white font-medium">freelance</span> (remoto o presencial).
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <!-- Formulario de mensaje -->
+          <div class="border border-[#ABB2BF] bg-[#282C33]">
+            <div class="p-4 border-b border-[#ABB2BF]">
+              <h2 class="text-xl font-medium text-white">
+                <span class="text-[#C778DD]">#</span>Envíame un mensaje
+              </h2>
+            </div>
+
+            <form name="contacto-pagina" method="POST" data-netlify="true" class="p-6 flex flex-col gap-5">
+              <input type="hidden" name="form-name" value="contacto-pagina" />
+
+              <div>
+                <label for="contact-name" class="block mb-2 text-sm font-medium text-[#C778DD]">Nombre</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="nombre"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="Tu nombre"
+                  required />
+              </div>
+
+              <div>
+                <label for="contact-email" class="block mb-2 text-sm font-medium text-[#C778DD]">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="tu.correo@ejemplo.com"
+                  required />
+              </div>
+
+              <div>
+                <label for="contact-subject" class="block mb-2 text-sm font-medium text-[#C778DD]">Asunto</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="asunto"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="Oportunidad laboral, proyecto web, consulta..."
+                  required />
+              </div>
+
+              <div>
+                <label for="contact-message" class="block mb-2 text-sm font-medium text-[#C778DD]">Mensaje</label>
+                <textarea
+                  id="contact-message"
+                  name="mensaje"
+                  rows="5"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="Cuéntame sobre el proyecto o propuesta..."
+                  required></textarea>
+              </div>
+
+              <div>
                 <button
-                    id="menu-btn"
-                    class="text-white focus:outline-none md:hidden z-60"
-                >
-                    <svg
-                        id="menu-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M12 12h8M4 18h16"
-                        />
-                    </svg>
+                  type="submit"
+                  class="border border-[#C778DD] text-white px-6 py-2 hover:bg-[#C778DD]/10 transition-all text-sm font-medium cursor-pointer">
+                  Enviar mensaje
                 </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Redes y perfiles -->
+      <section class="py-12">
+        <div class="flex items-center gap-4 mb-10">
+          <h2 class="text-2xl md:text-3xl font-medium text-white">
+            <span class="text-[#C778DD]">#</span>Mis redes
+          </h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
+        </div>
+
+        <div class="flex flex-wrap gap-6">
+          <a
+            href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-[#ABB2BF] bg-[#282C33] px-5 py-3 flex items-center gap-3 text-[#ABB2BF] hover:text-white hover:border-[#C778DD] transition-colors">
+            <img src="../Media/linkedin.png" alt="LinkedIn" class="w-5 h-5" />
+            <span class="text-sm">LinkedIn / Alejandro Alvarenga</span>
+          </a>
+
+          <a
+            href="https://github.com/Marvel983"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border border-[#ABB2BF] bg-[#282C33] px-5 py-3 flex items-center gap-3 text-[#ABB2BF] hover:text-white hover:border-[#C778DD] transition-colors">
+            <img src="../Media/github.png" alt="GitHub" class="w-5 h-5" />
+            <span class="text-sm">GitHub / Marvel983</span>
+          </a>
+
+          <a
+            href="mailto:alejandro.alvarenga.dev@gmail.com"
+            class="border border-[#ABB2BF] bg-[#282C33] px-5 py-3 flex items-center gap-3 text-[#ABB2BF] hover:text-white hover:border-[#C778DD] transition-colors">
+            <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path
+                d="M61.4 64C27.5 64 0 91.5 0 125.4 0 126.3 0 127.1 .1 128L0 128 0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256-.1 0c0-.9 .1-1.7 .1-2.6 0-33.9-27.5-61.4-61.4-61.4L61.4 64zM464 192.3L464 384c0 8.8-7.2 16-16 16L64 400c-8.8 0-16-7.2-16-16l0-191.7 154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3zM48 125.4C48 118 54 112 61.4 112l389.2 0c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7z" />
+            </svg>
+            <span class="text-sm">alejandro.alvarenga.dev@gmail.com</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="flex flex-col gap-2 text-xs text-[#ABB2BF]/70 md:text-left">
+            <p class="text-[#ABB2BF] text-sm">&copy; 2026 Alejandro Alvarenga. Todos los derechos reservados.</p>
+            <p>
+              Diseño inspirado por:
+              <a
+                href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white underline decoration-dotted">
+                Portfolio Design (Figma)
+              </a>
+            </p>
+            <p>
+              Iconos:
+              <a
+                href="https://www.flaticon.es/iconos-gratis/creencia"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Iconos Flaticon"
+                class="hover:text-white underline">
+                Retinaicons - Flaticon
+              </a>
+            </p>
+          </div>
+
+          <div class="md:text-right">
+            <h2 class="text-xl text-white font-medium">Redes</h2>
+            <div class="flex justify-center md:justify-end items-center gap-4 mt-4">
+              <a href="https://github.com/Marvel983" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="../Media/github.png" alt="GitHub" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="../Media/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-            <div
-                id="mobile-menu"
-                class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden"
-            >
-                <div class="mt-16 flex flex-col gap-8 text-3xl">
-                    <a href="../index.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>home</a
-                    >
-                    <a href="../Html/projects.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>projects</a
-                    >
-                    <a href="../Html/aboutMe.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>about-me</a
-                    >
-                    <a href="../Html/contactMe.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>contacts</a
-                    >
-
-                    <div
-                        class="mt-4 text-xl text-gray-400 border-t border-gray-700 pt-4"
-                    >
-                        <span>EN ⌄</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main class="max-w-6xl mx-auto px-4">
-            <section class="py-16">
-                <div class="flex items-center gap-4 mb-12">
-                    <h2 class="text-3xl font-medium text-white">
-                        <span class="text-[#C778DD]">#</span>contacts
-                    </h2>
-                    <div class="h-[1px] bg-[#C778DD] flex-grow max-w-md"></div>
-                </div>
-
-                <div class="flex flex-col md:flex-row justify-between gap-8">
-                    <div class="md:w-1/2">
-                        <p class="text-[#ABB2BF] text-base leading-relaxed">
-                            I’m interested in freelance opportunities. However,
-                            if you have other request or question, don’t
-                            hesitate to contact me.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-col gap-4">
-                        <div
-                            class="border border-[#ABB2BF] p-4 bg-[#282C33] min-w-[200px]"
-                        >
-                            <h3 class="text-white font-semibold mb-2"
-                                >Support me here</h3
-                            >
-                            <p class="text-[#ABB2BF] text-sm font-mono"
-                                >4149500120690030</p
-                            >
-                        </div>
-
-                        <div
-                            class="border border-[#ABB2BF] p-4 bg-[#282C33] min-w-[200px]"
-                        >
-                            <h3 class="text-white font-semibold mb-4"
-                                >Message me here</h3
-                            >
-                            <div class="flex flex-col gap-3">
-                                <div
-                                    class="flex items-center gap-2 text-[#ABB2BF]"
-                                >
-                                    <i class="fab fa-discord text-lg"></i>
-                                    <span class="text-sm">Elias#1234</span>
-                                </div>
-                                <div
-                                    class="flex items-center gap-2 text-[#ABB2BF]"
-                                >
-                                    <i class="fas fa-envelope text-lg"></i>
-                                    <span class="text-sm"
-                                        >elias@elias-dev.ml</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-12">
-                <div class="mb-8">
-                    <h2 class="text-3xl font-medium text-white">
-                        <span class="text-[#C778DD]">#</span>all-media
-                    </h2>
-                </div>
-
-                <div class="flex gap-8">
-                    <a
-                        href="#"
-                        class="flex items-center gap-2 text-[#ABB2BF] hover:text-white transition-colors"
-                    >
-                        <i class="fab fa-twitter text-xl"></i>
-                        <span>@elias</span>
-                    </a>
-                    <a
-                        href="#"
-                        class="flex items-center gap-2 text-[#ABB2BF] hover:text-white transition-colors"
-                    >
-                        <i class="fab fa-twitter text-xl"></i>
-                        <span>@elias</span>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
-            <div class="max-w-6xl mx-auto px-4 text-center">
-                <div class="flex justify-center">
-                    <p class="text-[#ABB2BF] text-x">
-                        &copy; 2026 Alejandro. All rights reserved.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-2">
-                    <div
-                        class="mt-6 flex flex-col gap-2 text-[12px] text-[#ABB2BF]/70"
-                    >
-                        <p>
-                            Diseño inspirado por:
-                            <a
-                                href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
-                                target="_blank"
-                                class="hover:text-white underline decoration-dotted"
-                            >
-                                Portfolio Design (Figma)
-                            </a>
-                        </p>
-                        <p>
-                            Iconos:
-                            <a
-                                href="https://www.flaticon.es/iconos-gratis/creencia"
-                                title="creencia iconos"
-                                class="hover:text-white underline"
-                            >
-                                Retinaicons - Flaticon
-                            </a>
-                        </p>
-                    </div>
-                    <div>
-                        <h2 class="text-xl">Media</h2>
-                        <div
-                            class="flex justify-center items-center gap-4 mt-4"
-                        >
-                            <a href="https://github.com/Marvel983"
-                                ><img
-                                    src="../Media/github.png"
-                                    alt="GitHub"
-                                    class="w-8 h-8 relative z-10"
-                            /></a>
-                            <a
-                                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
-                                ><img
-                                    src="../Media/linkedin.png"
-                                    alt="linkedin"
-                                    class="w-8 h-8 relative z-10"
-                            /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Script -->
-        <script src="../Js/app.js"></script>
-    </body>
+    <!-- Script -->
+    <script src="../Js/app.js"></script>
+  </body>
 </html>

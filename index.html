@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,42 +7,42 @@
 
     <link rel="icon" type="image/svg+xml" href="Media/suitcase-solid-full.svg" />
 
-    <title>Alejandro | Portfolio</title>
+    <title>Alejandro Alvarenga | Portafolio</title>
   </head>
   <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
     <header class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20">
       <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-        <div class="flex items-center gap-2 text-white font-bold text-xl">
+        <a href="index.html" class="flex items-center gap-2 text-white font-bold text-xl">
           <span class="text-[#C778DD]">#</span>
-          <h3>Alejandro</h3>
-        </div>
+          <span>Alejandro</span>
+        </a>
 
         <nav class="hidden md:flex">
           <ul class="flex space-x-8">
             <li>
-              <a href="../index.html" class="hover:text-white transition-colors text-gray-400"
-                ><span class="text-[#C778DD]">#</span>home</a
-              >
+              <a href="index.html" class="text-white transition-colors text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Inicio
+              </a>
             </li>
             <li>
-              <a href="../Html/projects.html" class="hover:text-white transition-colors text-gray-400"
-                ><span class="text-[#C778DD]">#</span>projects</a
-              >
+              <a href="Html/projects.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Proyectos
+              </a>
             </li>
             <li>
-              <a href="../Html/aboutMe.html" class="hover:text-white transition-colors text-gray-400"
-                ><span class="text-[#C778DD]">#</span>about-me</a
-              >
+              <a href="Html/aboutMe.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Sobre mí
+              </a>
             </li>
             <li>
-              <a href="../Html/contactMe.html" class="hover:text-white transition-colors text-gray-400"
-                ><span class="text-[#C778DD]">#</span>contacts</a
-              >
+              <a href="Html/contactMe.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Contáctame
+              </a>
             </li>
           </ul>
         </nav>
 
-        <button id="menu-btn" class="text-white focus:outline-none md:hidden z-60">
+        <button id="menu-btn" class="text-white focus:outline-none md:hidden z-60" aria-label="Abrir menú">
           <svg
             id="menu-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -57,122 +57,60 @@
 
       <div
         id="mobile-menu"
-        class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden">
+        class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden z-50">
         <div class="mt-16 flex flex-col gap-8 text-3xl">
-          <a href="../index.html" class="text-gray-400"><span class="text-[#C778DD]">#</span>home</a>
-          <a href="../Html/projects.html" class="text-gray-400"><span class="text-[#C778DD]">#</span>projects</a>
-          <a href="../Html/aboutMe.html" class="text-gray-400"><span class="text-[#C778DD]">#</span>about-me</a>
-          <a href="../Html/contactMe.html" class="text-gray-400"><span class="text-[#C778DD]">#</span>contacts</a>
-
-          <div class="mt-4 text-xl text-gray-400 border-t border-gray-700 pt-4">
-            <span>EN ⌄</span>
-          </div>
+          <a href="index.html" class="text-white"><span class="text-[#C778DD]">#</span>Inicio</a>
+          <a href="Html/projects.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Proyectos
+          </a>
+          <a href="Html/aboutMe.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Sobre mí
+          </a>
+          <a href="Html/contactMe.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Contáctame
+          </a>
         </div>
       </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4">
-
-      <!-- Presentacion -->
+      <!-- Presentación -->
       <section class="flex flex-col md:flex-row items-center justify-between py-20 gap-12">
         <div class="md:w-3/5 text-left">
-          <h1 class="text-4xl font-semibold text-white mb-6">
-            Alejandro es un
+          <h1 class="text-4xl font-semibold text-white mb-6 leading-tight">
+            Alejandro Alvarenga es un
             <span class="text-[#C778DD]">desarrollador full-stack</span>
+            web y de software
           </h1>
           <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-            Disfruto trabajar en proyectos que me pongan a prueba, mejorar mis habilidades y poder explorar diferentes
-            areas del desarrollo web
+            Estudiante de Ingeniería en Ciencias de la Computación en la UDB. Construyo aplicaciones web, sistemas de
+            escritorio y soluciones de datos funcionales, escalables y enfocadas en el usuario.
           </p>
 
-          <!-- Boton modal-->
-          <button
-            data-modal-target="crud-modal"
-            data-modal-toggle="crud-modal"
-            class="inline-block border border-[#C778DD] text-white px-6 py-2 hover:bg-[#C778DD]/10 transition-all font-medium"
-            type="button"
-            id="open-modal-btn">
-            Contactame!
-          </button>
-
-          <!-- Contacto en modal-->
-          <div
-            id="crud-modal"
-            tabindex="-1"
-            aria-hidden="true"
-            class="hidden fixed inset-0 z-50 h-dvh w-screen overflow-y-auto justify-center items-center p-4 bg-[#282C33]/80 backdrop-blur-sm">
-            <div class="relative mx-auto w-full max-w-md my-auto">
-              <div class="relative bg-[#282C33] border border-[#ABB2BF] shadow-lg w-full">
-                <div class="flex items-center justify-between border-b border-[#ABB2BF] p-4">
-                  <h3 class="text-xl font-medium text-white"><span class="text-[#C778DD]">#</span>contactame</h3>
-                  <button
-                    type="button"
-                    class="text-[#ABB2BF] bg-transparent hover:text-[#C778DD] transition-colors shrink-0"
-                    id="close-modal-img">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    <span class="sr-only">Cerrar ventana</span>
-                  </button>
-                </div>
-
-                <form action="#" class="p-4 sm:p-6">
-                  <div class="grid gap-4 sm:gap-6 mb-6">
-                    <div class="min-w-0">
-                      <label for="name" class="block mb-2 text-sm font-medium text-[#C778DD]">Nombre</label>
-                      <input
-                        type="text"
-                        id="name"
-                        class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
-                        placeholder="Tu nombre"
-                        required />
-                    </div>
-                    <div class="min-w-0">
-                      <label for="email" class="block mb-2 text-sm font-medium text-[#C778DD]">Correo electronico</label>
-                      <input
-                        type="email"
-                        id="email"
-                        class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
-                        placeholder="email@gmail.com"
-                        required />
-                    </div>
-                    <div class="min-w-0">
-                      <label for="description" class="block mb-2 text-sm font-medium text-[#C778DD]">Mensaje</label>
-                      <textarea
-                        id="description"
-                        rows="4"
-                        class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
-                        placeholder="Escribe tu mensaje aqui..."></textarea>
-                    </div>
-                  </div>
-
-                  <div class="flex flex-wrap items-center gap-3 sm:gap-4">
-                    <button
-                      type="submit"
-                      class="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/10 transition-all text-sm font-medium">
-                      Enviar
-                    </button>
-                    <button
-                      data-modal-hide="crud-modal"
-                      id="close-modal-btn"
-                      type="button"
-                      class="border border-[#ABB2BF] text-[#ABB2BF] px-4 py-2 hover:bg-[#ABB2BF]/10 transition-all text-sm font-medium">
-                      Cancelar
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
+          <div class="flex flex-wrap gap-4">
+            <button
+              data-modal-target="crud-modal"
+              data-modal-toggle="crud-modal"
+              class="inline-block border border-[#C778DD] text-white px-6 py-2 hover:bg-[#C778DD]/10 transition-all font-medium cursor-pointer"
+              type="button"
+              id="open-modal-btn">
+              ¡Contáctame!
+            </button>
+            <a
+              href="Html/projects.html"
+              class="inline-block border border-[#ABB2BF] text-[#ABB2BF] px-6 py-2 hover:text-white hover:border-white transition-all font-medium">
+              Ver proyectos
+            </a>
           </div>
         </div>
 
         <!-- Imagen de perfil -->
-        <div class="relative">
+        <div class="relative shrink-0">
           <div class="absolute -top-4 -left-4 w-20 h-20 border-2 border-[#C778DD] z-0"></div>
           <img
-            src="../Media/user/profile_user.jpeg"
-            alt="Profile Picture"
-            class="w-64 h-64 object-cover border-1 border-[#C778DD] relative z-10" />
+            src="Media/user/profile_user.jpeg"
+            alt="Foto de perfil de Alejandro Alvarenga"
+            class="w-64 h-64 object-cover border border-[#C778DD] relative z-10" />
         </div>
       </section>
 
@@ -181,226 +119,284 @@
         <div class="flex items-center gap-4 mb-12">
           <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>Proyectos</h2>
           <div class="h-px bg-[#C778DD] grow max-w-md"></div>
-          <a href="../Html/projects.html" class="text-white hover:underline ml-auto">Ver todos ~~></a>
+          <a href="Html/projects.html" class="text-white hover:underline ml-auto shrink-0">Ver todos ~~&gt;</a>
         </div>
 
-        <!-- Project Cards -->
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="border border-[#ABB2BF] bg-[#282C33] group">
-            <div class="overflow-hidden border-b border-[#ABB2BF]">
+        <!-- Tarjetas de proyectos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Proyecto 1 -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <!-- Reemplaza la ruta por una captura real del proyecto -->
               <img
-                src="/Media/projects/proyectoCalculadora.png"
-                alt="proyectoCalculadora"
-                class="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-300" />
+                src="Media/projects/electromarket.png"
+                alt="Captura de ElectroMarket y RegistroEstudiantes"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">HTML CSS JavaScript</div>
-            <div class="p-4">
-              <h3 class="text-2xl font-medium text-white mb-2">Calculadora</h3>
-              <p class="text-[#ABB2BF] text-sm mb-4">
-                Calculadora web funcional con diseño responsivo y lógica matemática
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              C# &bull; .NET &bull; EF Core &bull; SQL Server
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">ElectroMarket</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Sistema empresarial de gestión en C# (.NET Windows Forms) conectado a SQL Server mediante Entity
+                Framework, con manual técnico de usuario.
               </p>
               <div class="flex gap-4">
+                <!-- Reemplaza con la URL directa al repositorio en GitHub -->
                 <a
-                  href="https://alvatorecalculadora.netlify.app/"
-                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20">
-                  Ver &lt;~~&gt;
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Código &lt;~~&gt;
                 </a>
               </div>
             </div>
-          </div>
-          <div class="border border-[#ABB2BF] bg-[#282C33] group">
-            <div class="overflow-hidden border-b border-[#ABB2BF]">
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <!-- Reemplaza la ruta por una captura real del dashboard en Power BI -->
               <img
-                src="tu-imagen.jpg"
-                alt="ChertNodes"
-                class="w-full h-48 object-cover group-hover:scale-105 transition-transform" />
+                src="Media/projects/datawarehouse-bi.png"
+                alt="Dashboard ejecutivo de Inteligencia de Negocios en Power BI"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">HTML SCSS Python Flask</div>
-            <div class="p-4">
-              <h3 class="text-2xl font-medium text-white mb-2">ChertNodes</h3>
-              <p class="text-[#ABB2BF] text-sm mb-4">Minecraft servers hosting</p>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              Pentaho &bull; SSIS &bull; MySQL &bull; Power BI
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Data Warehouse &amp; BI</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Flujos ETL con normalización mediante expresiones regulares en Pentaho y SSIS, modelado multidimensional
+                en MySQL y dashboards ejecutivos en Power BI.
+              </p>
               <div class="flex gap-4">
-                <button class="border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20">
-                  Live &lt;~~&gt;
-                </button>
+                <!-- Reemplaza con la URL directa al repositorio o demo -->
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Detalles &lt;~~&gt;
+                </a>
               </div>
             </div>
-          </div>
-          <div class="border border-[#ABB2BF] bg-[#282C33] group">
-            <div class="overflow-hidden border-b border-[#ABB2BF]">
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <!-- Reemplaza la ruta por una captura de tu app web ASP.NET Core MVC -->
               <img
-                src="tu-imagen.jpg"
-                alt="ChertNodes"
-                class="w-full h-48 object-cover group-hover:scale-105 transition-transform" />
+                src="Media/projects/webapp-mvc.png"
+                alt="Aplicación web en ASP.NET Core MVC y SQL Server"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
-            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">HTML SCSS Python Flask</div>
-            <div class="p-4">
-              <h3 class="text-2xl font-medium text-white mb-2">ChertNodes</h3>
-              <p class="text-[#ABB2BF] text-sm mb-4">Minecraft servers hosting</p>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              ASP.NET Core MVC &bull; SQL Server &bull; Tailwind CSS
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Tracker &amp; Gestión Web</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Aplicación web full-stack con arquitectura MVC, persistencia en SQL Server, seguimiento automatizado y
+                visualización clara de progreso.
+              </p>
               <div class="flex gap-4">
-                <button class="border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20">
-                  Live &lt;~~&gt;
-                </button>
+                <!-- Reemplaza con la URL directa al repositorio o sitio desplegado -->
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Código &lt;~~&gt;
+                </a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <!-- Habilidades -->
       <section class="py-16">
         <div class="flex items-center gap-4 mb-12">
-          <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>skills</h2>
-          <div class="h-[1px] bg-[#C778DD] flex-grow max-w-md"></div>
+          <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>Habilidades</h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <!-- Frontend -->
           <div class="border border-[#ABB2BF] bg-[#282C33]">
             <div class="p-2 border-b border-[#ABB2BF]">
               <h3 class="text-xl font-medium text-white">Frontend</h3>
             </div>
             <div class="grid grid-cols-1">
-              <div class="p-4 border-b border-[#ABB2BF] last:border-b-0">
-                <h4 class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase">Languages</h4>
-                <p class="text-[#ABB2BF] text-sm">JavaScript HTML CSS SCSS</p>
+              <div class="p-4 border-b border-[#ABB2BF]">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Lenguajes</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">HTML5, CSS3, JavaScript, TypeScript</p>
+              </div>
+              <div class="p-4">
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Estilos y Diseño</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">Tailwind CSS, Diseño Responsivo, Figma</p>
               </div>
             </div>
           </div>
 
+          <!-- Backend y Escritorio -->
           <div class="border border-[#ABB2BF] bg-[#282C33]">
             <div class="p-2 border-b border-[#ABB2BF]">
-              <h3 class="text-xl font-medium text-white">Backend</h3>
+              <h3 class="text-xl font-medium text-white">Backend y Software</h3>
             </div>
             <div class="grid grid-cols-1">
               <div class="p-4 border-b border-[#ABB2BF]">
-                <h4 class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase">Languages</h4>
-                <p class="text-[#ABB2BF] text-sm">PHP JavaScript C#</p>
-              </div>
-              <div class="p-4 border-b border-[#ABB2BF]">
-                <h4 class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase">Frameworks</h4>
-                <p class="text-[#ABB2BF] text-sm">Laravel Vue</p>
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Lenguajes</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">C#, PHP, Python, SQL</p>
               </div>
               <div class="p-4">
-                <h4 class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase">Databases</h4>
-                <p class="text-[#ABB2BF] text-sm">SQLite MySQL SQLServer</p>
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Frameworks y Plataformas</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">
+                  ASP.NET Core MVC, Entity Framework Core, Windows Forms, Laravel
+                </p>
               </div>
             </div>
           </div>
 
+          <!-- Datos, BI e Infraestructura -->
           <div class="border border-[#ABB2BF] bg-[#282C33]">
             <div class="p-2 border-b border-[#ABB2BF]">
-              <h3 class="text-xl font-medium text-white">Others</h3>
+              <h3 class="text-xl font-medium text-white">Datos e Infraestructura</h3>
             </div>
             <div class="grid grid-cols-1">
               <div class="p-4 border-b border-[#ABB2BF]">
-                <h4 class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase">Technologies</h4>
-                <p class="text-[#ABB2BF] text-sm">Git Figma Font-Awesome</p>
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Bases de Datos y BI</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">
+                  SQL Server (T-SQL, SSIS, SSAS), MySQL, PostgreSQL, Pentaho Data Integration, Power BI
+                </p>
               </div>
               <div class="p-4">
-                <h4 class="text-[#ABB2BF] text-xs font-bold mb-2 uppercase">Tools</h4>
-                <p class="text-[#ABB2BF] text-sm">VSCode VStudio RapidMiner Pentaho PowerBI VirtualBox Exel Word</p>
+                <h4 class="text-[#C778DD] text-xs font-bold mb-2 uppercase">Herramientas y Redes</h4>
+                <p class="text-[#ABB2BF] text-sm leading-relaxed">
+                  Git, GitHub, Visual Studio, Rider, VS Code, Linux, VirtualBox, Cisco Packet Tracer, Wireshark
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Sobre mi -->
+      <!-- Sobre mí -->
       <section class="py-16">
         <div class="flex items-center gap-4 mb-12">
-          <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>about-me</h2>
-          <div class="h-[1px] bg-[#C778DD] flex-grow max-w-md"></div>
+          <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>Sobre mí</h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
         </div>
 
-        <div class="grid grid-cols-2 gap-8">
-          <div class="">
-            <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-              Hello! My name is Alejandro, and I am a passionate developer eager to create innovative web solutions.
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-[#ABB2BF] text-lg mb-6 leading-relaxed">
+              ¡Hola! Soy Alejandro Alvarenga, estudiante de Ingeniería en Ciencias de la Computación en la Universidad
+              Don Bosco con formación técnica en Desarrollo de Software.
+            </p>
+            <p class="text-[#ABB2BF] text-lg mb-6 leading-relaxed">
+              Combino el desarrollo full-stack web y de escritorio (.NET, Laravel y Tailwind CSS) con arquitectura de
+              bases de datos relacionales/multidimensionales y experiencia práctica en soporte técnico y administración
+              de infraestructura TI.
             </p>
             <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-              I enjoy working on projects that challenge me, improve my skills, and let me explore different areas of
-              web development.
-            </p>
-            <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-              Currently, I am gaining experience in frameworks like Laravel and frontend tools like Tailwind CSS.
+              Actualmente continúo fortaleciendo mi stack moderno cursando Full Stack Open (University of Helsinki) y
+              desarrollando proyectos enfocados en resolver problemas reales.
             </p>
             <a
               href="Html/aboutMe.html"
               class="inline-block border border-[#C778DD] text-white px-6 py-2 hover:bg-[#C778DD]/10 transition-all">
-              Read more...
+              Leer más...
             </a>
           </div>
 
-          <div class="relative flex justify-center items-center">
-            <div class="absolute top-4 left-28 w-20 h-20 border-2 border-[#C778DD] z-0"></div>
-            <img
-              src="../Media/user/profile.jpg"
-              alt="Profile Picture"
-              class="w-64 h-64 object-cover border-b-2 border-[#C778DD] relative z-10" />
+          <div class="flex justify-center items-center">
+            <div class="relative">
+              <div class="absolute -top-4 -left-4 w-20 h-20 border-2 border-[#C778DD] z-0"></div>
+              <img
+                src="Media/user/profile.jpg"
+                alt="Alejandro Alvarenga"
+                class="w-64 h-64 object-cover border-b-2 border-[#C778DD] relative z-10" />
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Contactame -->
+      <!-- Contáctame -->
       <section class="py-16">
         <div class="flex items-center gap-4 mb-12">
-          <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>contact-me</h2>
-          <div class="h-[1px] bg-[#C778DD] flex-grow max-w-md"></div>
+          <h2 class="text-3xl font-medium text-white"><span class="text-[#C778DD]">#</span>Contáctame</h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
         </div>
 
-        <div class="grid grid-cols-2 gap-8">
-          <div class="">
-            <p class="text-[#ABB2BF] text-lg mb-8 leading-relaxed">
-              I'm always open to new opportunities and collaborations. If you'd like to get in touch, feel free to reach
-              out.
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <p class="text-[#ABB2BF] text-lg mb-4 leading-relaxed">
+              Estoy abierto a oportunidades como desarrollador Jr., proyectos freelance y colaboraciones técnicas. Si
+              tienes un proyecto o vacante en mente, escríbeme directamente.
             </p>
           </div>
 
-          <div class="flex justify-center items-center p-4">
-            <div class="border border-[#ABB2BF] bg-[#282C33] min-w-[200px]">
-              <div class="p-2 border-b border-[#ABB2BF]">
-                <h3 class="text-white font-medium text-base">Message me here</h3>
+          <div class="flex md:justify-end items-center">
+            <div class="border border-[#ABB2BF] bg-[#282C33] w-full max-w-sm">
+              <div class="p-3 border-b border-[#ABB2BF]">
+                <h3 class="text-white font-medium text-base">Escríbeme aquí</h3>
               </div>
 
-              <div class="p-4 flex flex-col gap-3">
-                <div class="flex items-center gap-2 group cursor-pointer">
+              <div class="p-4 flex flex-col gap-4">
+                <a
+                  href="mailto:alejandro.alvarenga.dev@gmail.com"
+                  class="flex items-center gap-3 group text-[#ABB2BF] hover:text-white transition-colors">
                   <svg
-                    class="w-5 h-5 fill-[#ABB2BF] group-hover:fill-white transition-colors"
+                    class="w-5 h-5 shrink-0 fill-[#ABB2BF] group-hover:fill-white transition-colors"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 640 512">
                     <path
                       d="M61.4 64C27.5 64 0 91.5 0 125.4 0 126.3 0 127.1 .1 128L0 128 0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256-.1 0c0-.9 .1-1.7 .1-2.6 0-33.9-27.5-61.4-61.4-61.4L61.4 64zM464 192.3L464 384c0 8.8-7.2 16-16 16L64 400c-8.8 0-16-7.2-16-16l0-191.7 154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3zM48 125.4C48 118 54 112 61.4 112l389.2 0c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7z" />
                   </svg>
-                  <span class="text-[#ABB2BF] text-sm group-hover:text-white transition-colors">
-                    ajav.farm.1@gmail.com
-                  </span>
-                </div>
+                  <span class="text-sm break-all">alejandro.alvarenga.dev@gmail.com</span>
+                </a>
 
-                <div class="flex items-center gap-2 group cursor-pointer">
-                  <img src="../Media/linkedin.png" alt="GitHub" class="w-4 h-4 relative z-10" />
-                  <span class="text-[#ABB2BF] text-sm group-hover:text-white transition-colors">
-                    Alejandro Alvarenga
-                  </span>
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-3 group text-[#ABB2BF] hover:text-white transition-colors">
+                  <img src="Media/linkedin.png" alt="LinkedIn" class="w-5 h-5 shrink-0" />
+                  <span class="text-sm">Alejandro Alvarenga</span>
+                </a>
+
+                <a
+                  href="https://github.com/Alvatore19"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-3 group text-[#ABB2BF] hover:text-white transition-colors">
+                  <img src="Media/github.png" alt="GitHub" class="w-5 h-5 shrink-0" />
+                  <span class="text-sm">github.com/Marvel983</span>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
       <div class="max-w-6xl mx-auto px-4 text-center">
-        <div class="flex justify-center">
-          <p class="text-[#ABB2BF] text-x">&copy; 2026 Alejandro. All rights reserved.</p>
-        </div>
-
-        <div class="grid grid-cols-2">
-          <div class="mt-6 flex flex-col gap-2 text-[12px] text-[#ABB2BF]/70">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="flex flex-col gap-2 text-xs text-[#ABB2BF]/70 md:text-left">
+            <p class="text-[#ABB2BF] text-sm">&copy; 2026 Alejandro Alvarenga. Todos los derechos reservados.</p>
             <p>
               Diseño inspirado por:
               <a
                 href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="hover:text-white underline decoration-dotted">
                 Portfolio Design (Figma)
               </a>
@@ -409,26 +405,108 @@
               Iconos:
               <a
                 href="https://www.flaticon.es/iconos-gratis/creencia"
-                title="creencia iconos"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Iconos Flaticon"
                 class="hover:text-white underline">
                 Retinaicons - Flaticon
               </a>
             </p>
           </div>
-          <div>
-            <h2 class="text-xl">Media</h2>
-            <div class="flex justify-center items-center gap-4 mt-4">
-              <a href="https://github.com/Marvel983"
-                ><img src="../Media/github.png" alt="GitHub" class="w-8 h-8 relative z-10"
-              /></a>
-              <a href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
-                ><img src="../Media/linkedin.png" alt="linkedin" class="w-8 h-8 relative z-10"
-              /></a>
+
+          <div class="md:text-right">
+            <h2 class="text-xl text-white font-medium">Redes</h2>
+            <div class="flex justify-center md:justify-end items-center gap-4 mt-4">
+              <a href="https://github.com/Marvel983" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="Media/github.png" alt="GitHub" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="Media/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Modal de contacto (fuera de secciones para posicionamiento limpio en móvil) -->
+    <div
+      id="crud-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="hidden fixed inset-0 z-70 h-dvh w-screen overflow-y-auto justify-center items-center p-4 bg-[#282C33]/80 backdrop-blur-sm">
+      <div class="relative mx-auto w-full max-w-md my-auto">
+        <div class="relative bg-[#282C33] border border-[#ABB2BF] shadow-lg w-full">
+          <div class="flex items-center justify-between border-b border-[#ABB2BF] p-4">
+            <h3 class="text-xl font-medium text-white"><span class="text-[#C778DD]">#</span>Contáctame</h3>
+            <button
+              type="button"
+              class="text-[#ABB2BF] bg-transparent hover:text-[#C778DD] transition-colors shrink-0 cursor-pointer"
+              id="close-modal-img">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span class="sr-only">Cerrar ventana</span>
+            </button>
+          </div>
+
+          <form name="contacto" method="POST" data-netlify="true" class="p-4 sm:p-6">
+            <input type="hidden" name="form-name" value="contacto" />
+            <div class="grid gap-4 sm:gap-6 mb-6">
+              <div class="min-w-0">
+                <label for="name" class="block mb-2 text-sm font-medium text-[#C778DD]">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="nombre"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="Tu nombre"
+                  required />
+              </div>
+              <div class="min-w-0">
+                <label for="email" class="block mb-2 text-sm font-medium text-[#C778DD]">Correo electrónico</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="tu.correo@ejemplo.com"
+                  required />
+              </div>
+              <div class="min-w-0">
+                <label for="description" class="block mb-2 text-sm font-medium text-[#C778DD]">Mensaje</label>
+                <textarea
+                  id="description"
+                  name="mensaje"
+                  rows="4"
+                  class="bg-[#282C33] border border-[#ABB2BF] text-white text-sm focus:border-[#C778DD] outline-none block w-full p-2.5 transition-all"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required></textarea>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+              <button
+                type="submit"
+                class="border border-[#C778DD] text-white px-4 py-2 hover:bg-[#C778DD]/10 transition-all text-sm font-medium cursor-pointer">
+                Enviar
+              </button>
+              <button
+                data-modal-hide="crud-modal"
+                id="close-modal-btn"
+                type="button"
+                class="border border-[#ABB2BF] text-[#ABB2BF] px-4 py-2 hover:bg-[#ABB2BF]/10 transition-all text-sm font-medium cursor-pointer">
+                Cancelar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- Script -->
     <script src="Js/app.js"></script>

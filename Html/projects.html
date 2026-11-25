@@ -1,218 +1,391 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/Media/suitcase-solid-full.svg"
-        />
+    <link rel="icon" type="image/svg+xml" href="../Media/suitcase-solid-full.svg" />
 
-        <title>Alejandro | Projects</title>
-    </head>
-    <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
-        <header
-            class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20"
-        >
-            <div
-                class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center"
-            >
-                <div
-                    class="flex items-center gap-2 text-white font-bold text-xl"
-                >
-                    <span class="text-[#C778DD]">#</span>
-                    <h3>Alejandro</h3>
-                </div>
+    <title>Alejandro Alvarenga | Proyectos</title>
+  </head>
+  <body class="bg-[#282C33] text-[#ABB2BF] min-h-screen font-mono">
+    <header class="sticky top-0 bg-[#21252B] z-50 border-b border-[#ABB2BF]/20">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center gap-2 text-white font-bold text-xl">
+          <span class="text-[#C778DD]">#</span>
+          <span>Alejandro</span>
+        </a>
 
-                <nav class="hidden md:flex">
-                    <ul class="flex space-x-8">
-                        <li
-                            ><a
-                                href="../index.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span>home</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/projects.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >projects</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/aboutMe.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >about-me</a
-                            ></li
-                        >
-                        <li
-                            ><a
-                                href="../Html/contactMe.html"
-                                class="hover:text-white transition-colors text-gray-400"
-                                ><span class="text-[#C778DD]">#</span
-                                >contacts</a
-                            ></li
-                        >
-                    </ul>
-                </nav>
+        <nav class="hidden md:flex">
+          <ul class="flex space-x-8">
+            <li>
+              <a href="../index.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Inicio
+              </a>
+            </li>
+            <li>
+              <a href="projects.html" class="text-white transition-colors text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Proyectos
+              </a>
+            </li>
+            <li>
+              <a href="aboutMe.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Sobre mí
+              </a>
+            </li>
+            <li>
+              <a href="contactMe.html" class="hover:text-white transition-colors text-gray-400 text-lg font-bold">
+                <span class="text-[#C778DD]">#</span>Contáctame
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-                <button
-                    id="menu-btn"
-                    class="text-white focus:outline-none md:hidden z-60"
-                >
-                    <svg
-                        id="menu-icon"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M12 12h8M4 18h16"
-                        />
-                    </svg>
-                </button>
+        <button id="menu-btn" class="text-white focus:outline-none md:hidden z-60" aria-label="Abrir menú">
+          <svg
+            id="menu-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M12 12h8M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden z-50">
+        <div class="mt-16 flex flex-col gap-8 text-3xl">
+          <a href="../index.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Inicio
+          </a>
+          <a href="projects.html" class="text-white">
+            <span class="text-[#C778DD]">#</span>Proyectos
+          </a>
+          <a href="aboutMe.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Sobre mí
+          </a>
+          <a href="contactMe.html" class="text-gray-400 hover:text-white">
+            <span class="text-[#C778DD]">#</span>Contáctame
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4">
+      <!-- Encabezado de página -->
+      <section class="pt-16 pb-8">
+        <h1 class="text-4xl font-semibold text-white mb-4">
+          <span class="text-[#C778DD]">/</span>proyectos
+        </h1>
+        <p class="text-[#ABB2BF] text-lg max-w-2xl">
+          Selección de aplicaciones web, sistemas empresariales, soluciones de inteligencia de negocios y prácticas de
+          infraestructura desarrolladas en proyectos académicos e independientes.
+        </p>
+      </section>
+
+      <!-- Proyectos principales -->
+      <section class="py-12">
+        <div class="flex items-center gap-4 mb-10">
+          <h2 class="text-2xl md:text-3xl font-medium text-white">
+            <span class="text-[#C778DD]">#</span>Proyectos principales
+          </h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- ElectroMarket -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/electromarket.png"
+                alt="Sistema de gestión ElectroMarket"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
             </div>
-
-            <div
-                id="mobile-menu"
-                class="fixed inset-0 bg-[#282C33] flex flex-col p-8 transition-transform transform translate-x-full md:hidden"
-            >
-                <div class="mt-16 flex flex-col gap-8 text-3xl">
-                    <a href="../index.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>home</a
-                    >
-                    <a href="../Html/projects.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>projects</a
-                    >
-                    <a href="../Html/aboutMe.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>about-me</a
-                    >
-                    <a href="../Html/contactMe.html" class="text-gray-400"
-                        ><span class="text-[#C778DD]">#</span>contacts</a
-                    >
-
-                    <div
-                        class="mt-4 text-xl text-gray-400 border-t border-gray-700 pt-4"
-                    >
-                        <span>EN ⌄</span>
-                    </div>
-                </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              C# &bull; .NET Windows Forms &bull; EF Core &bull; SQL Server
             </div>
-        </header>
-
-        <main class="max-w-6xl mx-auto px-4">
-            <!-- Projects-->
-            <section class="py-16">
-                <div class="flex items-center gap-4 mb-12">
-                    <h2 class="text-3xl font-medium text-white">
-                        <span class="text-[#C778DD]">/</span>projects
-                    </h2>
-                    <div class="h-[1px] bg-[#C778DD] flex-grow max-w-md"></div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="border border-[#ABB2BF] bg-[#282C33] group">
-                        <div class="overflow-hidden border-b border-[#ABB2BF]">
-                            <img
-                                src="tu-imagen.jpg"
-                                alt="ChertNodes"
-                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform"
-                            />
-                        </div>
-                        <div
-                            class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs"
-                        >
-                            HTML SCSS Python Flask
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-2xl font-medium text-white mb-2"
-                                >ChertNodes</h3
-                            >
-                            <p class="text-[#ABB2BF] text-sm mb-4"
-                                >Minecraft servers hosting</p
-                            >
-                            <div class="flex gap-4">
-                                <button
-                                    class="border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20"
-                                    >Live &lt;~~&gt;</button
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
-            <div class="max-w-6xl mx-auto px-4 text-center">
-                <div class="flex justify-center">
-                    <p class="text-[#ABB2BF] text-x">
-                        &copy; 2026 Alejandro. All rights reserved.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-2">
-                    <div
-                        class="mt-6 flex flex-col gap-2 text-[12px] text-[#ABB2BF]/70"
-                    >
-                        <p>
-                            Diseño inspirado por:
-                            <a
-                                href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
-                                target="_blank"
-                                class="hover:text-white underline decoration-dotted"
-                            >
-                                Portfolio Design (Figma)
-                            </a>
-                        </p>
-                        <p>
-                            Iconos:
-                            <a
-                                href="https://www.flaticon.es/iconos-gratis/creencia"
-                                title="creencia iconos"
-                                class="hover:text-white underline"
-                            >
-                                Retinaicons - Flaticon
-                            </a>
-                        </p>
-                    </div>
-                    <div>
-                        <h2 class="text-xl">Media</h2>
-                        <div
-                            class="flex justify-center items-center gap-4 mt-4"
-                        >
-                            <a href="https://github.com/Marvel983"
-                                ><img
-                                    src="../Media/github.png"
-                                    alt="GitHub"
-                                    class="w-8 h-8 relative z-10"
-                            /></a>
-                            <a
-                                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
-                                ><img
-                                    src="../Media/linkedin.png"
-                                    alt="linkedin"
-                                    class="w-8 h-8 relative z-10"
-                            /></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">ElectroMarket</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Sistema de gestión empresarial desarrollado en C# y .NET con persistencia en SQL Server mediante Entity
+                Framework Core, enfocado en control operativo y trazabilidad.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Código &lt;~~&gt;
+                </a>
+              </div>
             </div>
-        </footer>
+          </article>
 
-        <!-- Script -->
-        <script src="../Js/app.js"></script>
-    </body>
+          <!-- Data Warehouse & BI -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/datawarehouse-bi.png"
+                alt="Dashboard ejecutivo de Inteligencia de Negocios en Power BI"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              Pentaho &bull; SSIS &bull; MySQL &bull; Power BI
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Data Warehouse &amp; BI</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Diseño de flujos ETL en Pentaho Data Integration (normalización con expresiones regulares) y SSIS,
+                modelado en MySQL y creación de dashboards ejecutivos en Power BI.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Detalles &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Aplicación Web ASP.NET Core MVC -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/webapp-mvc.png"
+                alt="Aplicación web en ASP.NET Core MVC y SQL Server"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              ASP.NET Core MVC &bull; SQL Server &bull; Tailwind CSS
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Tracker &amp; Gestión Web</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Aplicación web full-stack con arquitectura MVC y SQL Server que automatiza el seguimiento de actividades
+                y presenta visualización de datos clara para el usuario.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Código &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- RegistroEstudiantes -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/registro-estudiantes.png"
+                alt="Sistema académico RegistroEstudiantes"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              C# &bull; ASP.NET Core MVC &bull; EF Core &bull; SQL Server
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">RegistroEstudiantes</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Sistema de gestión académica en .NET para administración de registros, validaciones de datos y consultas
+                estructuradas sobre SQL Server.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Código &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Integración .NET + Python HTTP -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/dotnet-python-http.png"
+                alt="Cliente .NET integrado con servicio HTTP en Python"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              C# &bull; .NET &bull; Python &bull; HTTP / REST
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Cliente .NET + API Python</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Integración entre clientes .NET y servicios HTTP desarrollados en Python para intercambio estructurado
+                de información entre plataformas.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Código &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Redes y Seguridad -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/redes-seguridad.png"
+                alt="Laboratorio de redes y seguridad informática"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              VirtualBox &bull; Zentyal 8.1 &bull; OpenVPN &bull; Wireshark
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Redes y Seguridad TI</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Infraestructuras virtualizadas en VirtualBox y Cisco Packet Tracer con Zentyal 8.1, túneles OpenVPN,
+                reglas de firewall, certificados HTTPS/TLS y análisis de tráfico.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://github.com/Marvel983"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Documentación &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Proyectos web y prácticas -->
+      <section class="py-12">
+        <div class="flex items-center gap-4 mb-10">
+          <h2 class="text-2xl md:text-3xl font-medium text-white">
+            <span class="text-[#C778DD]">#</span>Proyectos web y prácticas
+          </h2>
+          <div class="h-px bg-[#C778DD] grow max-w-md"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Calculadora -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] group flex flex-col">
+            <div class="overflow-hidden border-b border-[#ABB2BF] bg-[#21252B]">
+              <img
+                src="../Media/projects/proyectoCalculadora.png"
+                alt="Calculadora Web"
+                class="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              HTML5 &bull; CSS3 &bull; JavaScript
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Calculadora Web</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Calculadora web funcional con diseño responsivo y manejo limpio de operaciones matemáticas en
+                JavaScript.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://alvatorecalculadora.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Ver en vivo &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Portafolio Personal -->
+          <article class="border border-[#ABB2BF] bg-[#282C33] flex flex-col">
+            <div class="p-2 border-b border-[#ABB2BF] text-[#ABB2BF] text-xs">
+              HTML5 &bull; Tailwind CSS &bull; JavaScript &bull; Netlify
+            </div>
+            <div class="p-4 flex flex-col grow">
+              <h3 class="text-2xl font-medium text-white mb-2">Portafolio Personal</h3>
+              <p class="text-[#ABB2BF] text-sm mb-4 grow">
+                Sitio web responsivo inspirado en estética de editor de código, con control de versiones en Git/GitHub y
+                despliegue continuo en Netlify.
+              </p>
+              <div class="flex gap-4">
+                <a
+                  href="https://alejandromyportfolio.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block border border-[#C778DD] px-4 py-1 text-white text-sm hover:bg-[#C778DD]/20 transition-colors">
+                  Ver en vivo &lt;~~&gt;
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#21252B] py-10 mt-16 border-t border-[#ABB2BF]/20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div class="flex flex-col gap-2 text-xs text-[#ABB2BF]/70 md:text-left">
+            <p class="text-[#ABB2BF] text-sm">&copy; 2026 Alejandro Alvarenga. Todos los derechos reservados.</p>
+            <p>
+              Diseño inspirado por:
+              <a
+                href="https://www.figma.com/design/n7THUkvDwGW8exnFrsNrEQ/Portfolio--Community-?node-id=1-2&t=i0FKVTu2AE7GE3XI-0"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white underline decoration-dotted">
+                Portfolio Design (Figma)
+              </a>
+            </p>
+            <p>
+              Iconos:
+              <a
+                href="https://www.flaticon.es/iconos-gratis/creencia"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Iconos Flaticon"
+                class="hover:text-white underline">
+                Retinaicons - Flaticon
+              </a>
+            </p>
+          </div>
+
+          <div class="md:text-right">
+            <h2 class="text-xl text-white font-medium">Redes</h2>
+            <div class="flex justify-center md:justify-end items-center gap-4 mt-4">
+              <a href="https://github.com/Marvel983" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="../Media/github.png" alt="GitHub" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alejandro-alvarenga-1a3ba4222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <img src="../Media/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80 transition-opacity" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="../Js/app.js"></script>
+  </body>
 </html>
